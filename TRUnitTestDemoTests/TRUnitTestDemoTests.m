@@ -29,4 +29,15 @@
     STFail(@"Unit tests are not implemented yet in TRUnitTestDemoTests");
 }
 
+- (void)testExample2 {
+    STAssertNotNil(@"sucess", @"it's null");
+}
+
+- (void)testExample3 {
+    STAssertNotNil(nil, @"object is null");
+}
+
+- (void)testExample4 {
+    STAssertEqualObjects(@"Success", @"Success", @"not equal");
+}
 @end
