@@ -7,12 +7,17 @@
 //
 
 #import "TRViewController.h"
-
+#import "TRNetworkService.h"
 @interface TRViewController ()
 
 @end
 
 @implementation TRViewController
+
+- (IBAction)weeklyAdsPressed:(id)sender {
+    TRNetworkService *networkService = [[TRNetworkService alloc] init];
+    [networkService weeklyAds];
+}
 
 - (void)viewDidLoad
 {

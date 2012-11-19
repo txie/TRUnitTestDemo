@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TRViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton* weeklyAdsButton;
 
+- (IBAction)weeklyAdsPressed:(id)sender;
 @end
