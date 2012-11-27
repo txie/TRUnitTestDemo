@@ -7,7 +7,20 @@
 //
 
 #import "TRWeeklyAdsParser.h"
+#import "TROffer.h"
 
 @implementation TRWeeklyAdsParser
+- (NSArray*) parse:(NSDictionary*)json {
+    
+    NSMutableArray *result = [[NSMutableArray alloc] init];
 
+    NSArray* weeklySpecials = [json objectForKey:@"weeklySpecials"];
+    for (NSDictionary* weeklySpecial in weeklySpecials) {
+        TROffer *offer = [[TROffer alloc] init];
+        offer.title = [weeklySpecial objectForKey:@"title"];
+        offer.price = [weeklySpecial objectForKey:@"price"];
+        [result addObject:offer];
+    }
+    return result;
+}
 @end

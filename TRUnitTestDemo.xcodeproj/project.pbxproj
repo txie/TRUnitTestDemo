@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02BCE481663FA4C00CEFA4C /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C02BCE471663FA4C00CEFA4C /* libOCMock.a */; };
+		C02BCE4B16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */; };
+		C02BCE4C16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */; };
+		C02BCE4F16654E0C00CEFA4C /* TROffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4E16654E0C00CEFA4C /* TROffer.m */; };
+		C02BCE5016654E0C00CEFA4C /* TROffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4E16654E0C00CEFA4C /* TROffer.m */; };
 		C02F5DCF165ABD5300D74298 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5DCE165ABD5300D74298 /* UIKit.framework */; };
 		C02F5DD1165ABD5300D74298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5DD0165ABD5300D74298 /* Foundation.framework */; };
 		C02F5DD3165ABD5300D74298 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5DD2165ABD5300D74298 /* CoreGraphics.framework */; };
@@ -23,6 +28,38 @@
 		C02F5DF5165ABD5300D74298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5DD0165ABD5300D74298 /* Foundation.framework */; };
 		C02F5DFD165ABD5300D74298 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C02F5DFB165ABD5300D74298 /* InfoPlist.strings */; };
 		C02F5E00165ABD5300D74298 /* TRUnitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5DFF165ABD5300D74298 /* TRUnitTestDemoTests.m */; };
+		C02F5E11165ABDFF00D74298 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C02F5E0A165ABDFF00D74298 /* README.md */; };
+		C02F5E12165ABDFF00D74298 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C02F5E0A165ABDFF00D74298 /* README.md */; };
+		C02F5E13165ABDFF00D74298 /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E0C165ABDFF00D74298 /* RIButtonItem.m */; };
+		C02F5E14165ABDFF00D74298 /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E0C165ABDFF00D74298 /* RIButtonItem.m */; };
+		C02F5E15165ABDFF00D74298 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E0E165ABDFF00D74298 /* UIActionSheet+Blocks.m */; };
+		C02F5E16165ABDFF00D74298 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E0E165ABDFF00D74298 /* UIActionSheet+Blocks.m */; };
+		C02F5E17165ABDFF00D74298 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E10165ABDFF00D74298 /* UIAlertView+Blocks.m */; };
+		C02F5E18165ABDFF00D74298 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E10165ABDFF00D74298 /* UIAlertView+Blocks.m */; };
+		C02F5E31165ABE2500D74298 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E1E165ABE2500D74298 /* NSData+Base64.m */; };
+		C02F5E32165ABE2500D74298 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E1E165ABE2500D74298 /* NSData+Base64.m */; };
+		C02F5E33165ABE2500D74298 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E20165ABE2500D74298 /* NSDate+RFC1123.m */; };
+		C02F5E34165ABE2500D74298 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E20165ABE2500D74298 /* NSDate+RFC1123.m */; };
+		C02F5E35165ABE2500D74298 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E22165ABE2500D74298 /* NSDictionary+RequestEncoding.m */; };
+		C02F5E36165ABE2500D74298 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E22165ABE2500D74298 /* NSDictionary+RequestEncoding.m */; };
+		C02F5E37165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E24165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m */; };
+		C02F5E38165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E24165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m */; };
+		C02F5E39165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E26165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		C02F5E3A165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E26165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		C02F5E3B165ABE2500D74298 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E28165ABE2500D74298 /* MKNetworkEngine.m */; };
+		C02F5E3C165ABE2500D74298 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E28165ABE2500D74298 /* MKNetworkEngine.m */; };
+		C02F5E3D165ABE2500D74298 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2B165ABE2500D74298 /* MKNetworkOperation.m */; };
+		C02F5E3E165ABE2500D74298 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2B165ABE2500D74298 /* MKNetworkOperation.m */; };
+		C02F5E3F165ABE2500D74298 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2E165ABE2500D74298 /* Reachability.m */; };
+		C02F5E40165ABE2500D74298 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2E165ABE2500D74298 /* Reachability.m */; };
+		C02F5E42165ABED700D74298 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5E41165ABED700D74298 /* Security.framework */; };
+		C02F5E44165ABEE100D74298 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5E43165ABEE100D74298 /* CFNetwork.framework */; };
+		C02F5E46165ABEEA00D74298 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5E45165ABEEA00D74298 /* SystemConfiguration.framework */; };
+		C02F5E47165AC03E00D74298 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5E41165ABED700D74298 /* Security.framework */; };
+		C02F5E48165AC05A00D74298 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5E43165ABEE100D74298 /* CFNetwork.framework */; };
+		C02F5E49165AC07800D74298 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F5E45165ABEEA00D74298 /* SystemConfiguration.framework */; };
+		C02F5E4C165AC3C600D74298 /* TRNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E4B165AC3C600D74298 /* TRNetworkService.m */; };
+		C02F5E4D165AC3C600D74298 /* TRNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E4B165AC3C600D74298 /* TRNetworkService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +73,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C02BCE471663FA4C00CEFA4C /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = usr/lib/libOCMock.a; sourceTree = "<group>"; };
+		C02BCE4916654DD400CEFA4C /* TRWeeklyAdsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRWeeklyAdsParser.h; sourceTree = "<group>"; };
+		C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRWeeklyAdsParser.m; sourceTree = "<group>"; };
+		C02BCE4D16654E0C00CEFA4C /* TROffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TROffer.h; path = ../TROffer.h; sourceTree = "<group>"; };
+		C02BCE4E16654E0C00CEFA4C /* TROffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TROffer.m; path = ../TROffer.m; sourceTree = "<group>"; };
 		C02F5DCA165ABD5300D74298 /* TRUnitTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRUnitTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02F5DCE165ABD5300D74298 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C02F5DD0165ABD5300D74298 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +100,35 @@
 		C02F5DFC165ABD5300D74298 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C02F5DFE165ABD5300D74298 /* TRUnitTestDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRUnitTestDemoTests.h; sourceTree = "<group>"; };
 		C02F5DFF165ABD5300D74298 /* TRUnitTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRUnitTestDemoTests.m; sourceTree = "<group>"; };
+		C02F5E0A165ABDFF00D74298 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C02F5E0B165ABDFF00D74298 /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
+		C02F5E0C165ABDFF00D74298 /* RIButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIButtonItem.m; sourceTree = "<group>"; };
+		C02F5E0D165ABDFF00D74298 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		C02F5E0E165ABDFF00D74298 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		C02F5E0F165ABDFF00D74298 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		C02F5E10165ABDFF00D74298 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		C02F5E1D165ABE2500D74298 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		C02F5E1E165ABE2500D74298 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		C02F5E1F165ABE2500D74298 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		C02F5E20165ABE2500D74298 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		C02F5E21165ABE2500D74298 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		C02F5E22165ABE2500D74298 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		C02F5E23165ABE2500D74298 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		C02F5E24165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		C02F5E25165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		C02F5E26165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		C02F5E27165ABE2500D74298 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		C02F5E28165ABE2500D74298 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		C02F5E29165ABE2500D74298 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		C02F5E2A165ABE2500D74298 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		C02F5E2B165ABE2500D74298 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		C02F5E2D165ABE2500D74298 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C02F5E2E165ABE2500D74298 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C02F5E41165ABED700D74298 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C02F5E43165ABEE100D74298 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C02F5E45165ABEEA00D74298 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C02F5E4A165AC3C600D74298 /* TRNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNetworkService.h; sourceTree = "<group>"; };
+		C02F5E4B165AC3C600D74298 /* TRNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNetworkService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02F5E46165ABEEA00D74298 /* SystemConfiguration.framework in Frameworks */,
+				C02F5E44165ABEE100D74298 /* CFNetwork.framework in Frameworks */,
+				C02F5E42165ABED700D74298 /* Security.framework in Frameworks */,
 				C02F5DCF165ABD5300D74298 /* UIKit.framework in Frameworks */,
 				C02F5DD1165ABD5300D74298 /* Foundation.framework in Frameworks */,
 				C02F5DD3165ABD5300D74298 /* CoreGraphics.framework in Frameworks */,
@@ -75,9 +149,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02F5E49165AC07800D74298 /* SystemConfiguration.framework in Frameworks */,
+				C02F5E48165AC05A00D74298 /* CFNetwork.framework in Frameworks */,
+				C02F5E47165AC03E00D74298 /* Security.framework in Frameworks */,
 				C02F5DF3165ABD5300D74298 /* SenTestingKit.framework in Frameworks */,
 				C02F5DF4165ABD5300D74298 /* UIKit.framework in Frameworks */,
 				C02F5DF5165ABD5300D74298 /* Foundation.framework in Frameworks */,
+				C02BCE481663FA4C00CEFA4C /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +165,7 @@
 		C02F5DBF165ABD5300D74298 = {
 			isa = PBXGroup;
 			children = (
+				C02BCE471663FA4C00CEFA4C /* libOCMock.a */,
 				C02F5DD4165ABD5300D74298 /* TRUnitTestDemo */,
 				C02F5DF8165ABD5300D74298 /* TRUnitTestDemoTests */,
 				C02F5DCD165ABD5300D74298 /* Frameworks */,
@@ -106,6 +185,9 @@
 		C02F5DCD165ABD5300D74298 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C02F5E45165ABEEA00D74298 /* SystemConfiguration.framework */,
+				C02F5E43165ABEE100D74298 /* CFNetwork.framework */,
+				C02F5E41165ABED700D74298 /* Security.framework */,
 				C02F5DCE165ABD5300D74298 /* UIKit.framework */,
 				C02F5DD0165ABD5300D74298 /* Foundation.framework */,
 				C02F5DD2165ABD5300D74298 /* CoreGraphics.framework */,
@@ -117,11 +199,17 @@
 		C02F5DD4165ABD5300D74298 /* TRUnitTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C02F5E19165ABE2500D74298 /* MKNetworkKit */,
+				C02F5E09165ABDFF00D74298 /* UIAlertView-Blocks */,
 				C02F5DDD165ABD5300D74298 /* TRAppDelegate.h */,
 				C02F5DDE165ABD5300D74298 /* TRAppDelegate.m */,
 				C02F5DE6165ABD5300D74298 /* TRViewController.h */,
 				C02F5DE7165ABD5300D74298 /* TRViewController.m */,
 				C02F5DE9165ABD5300D74298 /* TRViewController.xib */,
+				C02F5E4A165AC3C600D74298 /* TRNetworkService.h */,
+				C02F5E4B165AC3C600D74298 /* TRNetworkService.m */,
+				C02BCE4916654DD400CEFA4C /* TRWeeklyAdsParser.h */,
+				C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */,
 				C02F5DD5165ABD5300D74298 /* Supporting Files */,
 			);
 			path = TRUnitTestDemo;
@@ -158,6 +246,62 @@
 				C02F5DFB165ABD5300D74298 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C02F5E09165ABDFF00D74298 /* UIAlertView-Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				C02BCE4D16654E0C00CEFA4C /* TROffer.h */,
+				C02BCE4E16654E0C00CEFA4C /* TROffer.m */,
+				C02F5E0A165ABDFF00D74298 /* README.md */,
+				C02F5E0B165ABDFF00D74298 /* RIButtonItem.h */,
+				C02F5E0C165ABDFF00D74298 /* RIButtonItem.m */,
+				C02F5E0D165ABDFF00D74298 /* UIActionSheet+Blocks.h */,
+				C02F5E0E165ABDFF00D74298 /* UIActionSheet+Blocks.m */,
+				C02F5E0F165ABDFF00D74298 /* UIAlertView+Blocks.h */,
+				C02F5E10165ABDFF00D74298 /* UIAlertView+Blocks.m */,
+			);
+			path = "UIAlertView-Blocks";
+			sourceTree = "<group>";
+		};
+		C02F5E19165ABE2500D74298 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				C02F5E1A165ABE2500D74298 /* Categories */,
+				C02F5E27165ABE2500D74298 /* MKNetworkEngine.h */,
+				C02F5E28165ABE2500D74298 /* MKNetworkEngine.m */,
+				C02F5E29165ABE2500D74298 /* MKNetworkKit.h */,
+				C02F5E2A165ABE2500D74298 /* MKNetworkOperation.h */,
+				C02F5E2B165ABE2500D74298 /* MKNetworkOperation.m */,
+				C02F5E2C165ABE2500D74298 /* Reachability */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		C02F5E1A165ABE2500D74298 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C02F5E1D165ABE2500D74298 /* NSData+Base64.h */,
+				C02F5E1E165ABE2500D74298 /* NSData+Base64.m */,
+				C02F5E1F165ABE2500D74298 /* NSDate+RFC1123.h */,
+				C02F5E20165ABE2500D74298 /* NSDate+RFC1123.m */,
+				C02F5E21165ABE2500D74298 /* NSDictionary+RequestEncoding.h */,
+				C02F5E22165ABE2500D74298 /* NSDictionary+RequestEncoding.m */,
+				C02F5E23165ABE2500D74298 /* NSString+MKNetworkKitAdditions.h */,
+				C02F5E24165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m */,
+				C02F5E25165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.h */,
+				C02F5E26165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C02F5E2C165ABE2500D74298 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C02F5E2D165ABE2500D74298 /* Reachability.h */,
+				C02F5E2E165ABE2500D74298 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +381,7 @@
 				C02F5DE3165ABD5300D74298 /* Default@2x.png in Resources */,
 				C02F5DE5165ABD5300D74298 /* Default-568h@2x.png in Resources */,
 				C02F5DEB165ABD5300D74298 /* TRViewController.xib in Resources */,
+				C02F5E11165ABDFF00D74298 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02F5DFD165ABD5300D74298 /* InfoPlist.strings in Resources */,
+				C02F5E12165ABDFF00D74298 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +420,20 @@
 				C02F5DDB165ABD5300D74298 /* main.m in Sources */,
 				C02F5DDF165ABD5300D74298 /* TRAppDelegate.m in Sources */,
 				C02F5DE8165ABD5300D74298 /* TRViewController.m in Sources */,
+				C02F5E13165ABDFF00D74298 /* RIButtonItem.m in Sources */,
+				C02F5E15165ABDFF00D74298 /* UIActionSheet+Blocks.m in Sources */,
+				C02F5E17165ABDFF00D74298 /* UIAlertView+Blocks.m in Sources */,
+				C02F5E31165ABE2500D74298 /* NSData+Base64.m in Sources */,
+				C02F5E33165ABE2500D74298 /* NSDate+RFC1123.m in Sources */,
+				C02F5E35165ABE2500D74298 /* NSDictionary+RequestEncoding.m in Sources */,
+				C02F5E37165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				C02F5E39165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				C02F5E3B165ABE2500D74298 /* MKNetworkEngine.m in Sources */,
+				C02F5E3D165ABE2500D74298 /* MKNetworkOperation.m in Sources */,
+				C02F5E3F165ABE2500D74298 /* Reachability.m in Sources */,
+				C02F5E4C165AC3C600D74298 /* TRNetworkService.m in Sources */,
+				C02BCE4B16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */,
+				C02BCE4F16654E0C00CEFA4C /* TROffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +442,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02F5E00165ABD5300D74298 /* TRUnitTestDemoTests.m in Sources */,
+				C02F5E14165ABDFF00D74298 /* RIButtonItem.m in Sources */,
+				C02F5E16165ABDFF00D74298 /* UIActionSheet+Blocks.m in Sources */,
+				C02F5E18165ABDFF00D74298 /* UIAlertView+Blocks.m in Sources */,
+				C02F5E32165ABE2500D74298 /* NSData+Base64.m in Sources */,
+				C02F5E34165ABE2500D74298 /* NSDate+RFC1123.m in Sources */,
+				C02F5E36165ABE2500D74298 /* NSDictionary+RequestEncoding.m in Sources */,
+				C02F5E38165ABE2500D74298 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				C02F5E3A165ABE2500D74298 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				C02F5E3C165ABE2500D74298 /* MKNetworkEngine.m in Sources */,
+				C02F5E3E165ABE2500D74298 /* MKNetworkOperation.m in Sources */,
+				C02F5E40165ABE2500D74298 /* Reachability.m in Sources */,
+				C02F5E4D165AC3C600D74298 /* TRNetworkService.m in Sources */,
+				C02BCE4C16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */,
+				C02BCE5016654E0C00CEFA4C /* TROffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +506,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Liang Zhang (8369X2TA6Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liang Zhang (8369X2TA6Y)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -345,7 +520,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "12CE9A72-79A5-4114-A39F-5FDC651A2658";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "12CE9A72-79A5-4114-A39F-5FDC651A2658";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -365,7 +542,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -375,10 +552,16 @@
 		C02F5E04165ABD5300D74298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TRUnitTestDemo/TRUnitTestDemo-Prefix.pch";
 				INFOPLIST_FILE = "TRUnitTestDemo/TRUnitTestDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,10 +569,16 @@
 		C02F5E05165ABD5300D74298 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TRUnitTestDemo/TRUnitTestDemo-Prefix.pch";
 				INFOPLIST_FILE = "TRUnitTestDemo/TRUnitTestDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -397,6 +586,7 @@
 		C02F5E07165ABD5300D74298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TRUnitTestDemo.app/TRUnitTestDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -404,9 +594,21 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TRUnitTestDemo/TRUnitTestDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/usr/include\"";
 				INFOPLIST_FILE = "TRUnitTestDemoTests/TRUnitTestDemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/usr/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -414,6 +616,7 @@
 		C02F5E08165ABD5300D74298 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TRUnitTestDemo.app/TRUnitTestDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -421,9 +624,21 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TRUnitTestDemo/TRUnitTestDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/usr/include\"";
 				INFOPLIST_FILE = "TRUnitTestDemoTests/TRUnitTestDemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/usr/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -447,6 +662,7 @@
 				C02F5E05165ABD5300D74298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C02F5E06165ABD5300D74298 /* Build configuration list for PBXNativeTarget "TRUnitTestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +671,7 @@
 				C02F5E08165ABD5300D74298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

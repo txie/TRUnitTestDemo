@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface TRWeeklyAdsParser : NSObject
-
+- (NSArray*) parse:(NSDictionary*)json;
 @end

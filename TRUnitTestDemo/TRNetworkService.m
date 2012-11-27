@@ -12,7 +12,8 @@
 
 @implementation TRNetworkService
 - (void) weeklyAds {
-    // http://www.safeway.com/emmd/service/offer/weeklySpecial/4601?Brand=safeway (no credential needed)
+    // http://www.safeway.com/emmd/service/offer/weeklySpecial/4601?Brand=safeway
+    // (no credential needed)
     
     MKNetworkEngine *safewayEngine = [[MKNetworkEngine alloc] initWithHostName:HOSTNAME customHeaderFields:nil];
     NSMutableArray *result = [[NSMutableArray alloc] init];
@@ -22,10 +23,11 @@
     
     [op onCompletion:^(MKNetworkOperation *completedOperation) {
         NSDictionary *json = [op responseJSON];
-        NSLog(@"weeklySpecial response: %@", json);
-        NSArray* hintArray = [[json objectForKey:@"response"] objectForKey:@"docs"];
-        for (NSDictionary* dict in hintArray) {
-            [result addObject:[dict objectForKey:@"prod_desc"]];
+        // NSLog(@"weeklySpecial response: %@", json);
+        NSArray* weeklySpecials = [json objectForKey:@"weeklySpecials"];
+        for (NSDictionary* weeklySpecial in weeklySpecials) {
+            [result addObject:[weeklySpecial objectForKey:@"title"]];
+            // NSLog(@"%@ %@", [weeklySpecial objectForKey:@"title"], [weeklySpecial objectForKey:@"price"]);
         }
         NSMutableArray *searchResults = (NSMutableArray*)[[NSSet setWithArray:result] allObjects];
         NSLog(@"catalog Results: %@", searchResults);        

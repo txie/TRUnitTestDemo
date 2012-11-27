@@ -6,7 +6,11 @@
 //  Copyright (c) 2012 Tao Xie. All rights reserved.
 //
 
+#import <OCMock/OCMock.h>
+
 #import "TRUnitTestDemoTests.h"
+#import "TRNetworkService.h"
+#import "TRViewController.h"
 
 @implementation TRUnitTestDemoTests
 
@@ -26,18 +30,32 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in TRUnitTestDemoTests");
+    // STFail(@"Force Fail");
 }
 
 - (void)testExample2 {
-    STAssertNotNil(@"sucess", @"it's null");
+    STAssertNotNil(@"sucess", @"It's null");
 }
 
 - (void)testExample3 {
-    STAssertNotNil(nil, @"object is null");
+    STAssertNotNil([NSDate date], @"Object is null");
 }
 
 - (void)testExample4 {
-    STAssertEqualObjects(@"Success", @"Success", @"not equal");
+    STAssertEqualObjects(@"Success", @"Success", @"Not equal");
 }
+
+- (void)testButtonAction1 {
+    TRViewController *controller = [[TRViewController alloc] init];
+    id netMock = [OCMockObject mockForClass:[TRNetworkService class]];
+    [[netMock expect] weeklyAds];
+    [controller weeklyAdsPressed:controller.weeklyAdsButton];
+    [netMock verify];
+}
+
+- (void)testNetError {
+    id netMock = [OCMockObject mockForClass:[TRNetworkService class]];
+    [netMock stub] andReturn:@"Error" 
+}
+
 @end
