@@ -149,20 +149,4 @@
     [netMock verify];
 }
 
-/*
-- (void)testButtonAction1 {
-    TRViewController *controller = [[TRViewController alloc] init];
-    id netMock = [OCMockObject mockForClass:[TRNetworkService class]];
-    [[netMock expect] weeklyAds];
-    [controller weeklyAdsPressed:controller.weeklyAdsButton];
-    [netMock verify];
-}
-
-- (void)testNetError {
-    id parserMock = [OCMockObject mockForClass:[TRWeeklyAdsParser class]];
-    id netMock = [OCMockObject mockForClass:[TRNetworkService class]];
-    
-    [[parserMock stub] andReturn:nil parse:nil];
-}
-*/
 @end
