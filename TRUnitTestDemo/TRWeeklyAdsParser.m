@@ -11,7 +11,8 @@
 
 @implementation TRWeeklyAdsParser
 - (NSArray*) parse:(NSDictionary*)json {
-    
+    if (json == nil)
+        return nil;
     NSMutableArray *result = [[NSMutableArray alloc] init];
 
     NSArray* weeklySpecials = [json objectForKey:@"weeklySpecials"];
@@ -21,6 +22,7 @@
         offer.price = [weeklySpecial objectForKey:@"price"];
         [result addObject:offer];
     }
+    NSLog(@"Result of %d elements", [result count]);
     return result;
 }
 @end

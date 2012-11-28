@@ -9,5 +9,7 @@
 #import "TROffer.h"
 
 @implementation TROffer
-
+- (NSString*)description {
+    return [NSString stringWithFormat:@"(%@, %@)", _title, _price];
+}
 @end

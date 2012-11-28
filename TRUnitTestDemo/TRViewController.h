@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TRNetworkService.h"
 
 @interface TRViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton* weeklyAdsButton;
+@property (nonatomic, strong) TRNetworkService *networkService;
 
+- (id)initWithNetworkService:(TRNetworkService*)networkService;
 - (IBAction)weeklyAdsPressed:(id)sender;
 @end

@@ -7,35 +7,38 @@
 //
 
 #import "TRNetworkService.h"
+#import "TRWeeklyAdsParser.h"
+#import "TRService.h"
 
 #define HOSTNAME @"www.safeway.com"
 
 @implementation TRNetworkService
+
 - (void) weeklyAds {
     // http://www.safeway.com/emmd/service/offer/weeklySpecial/4601?Brand=safeway
     // (no credential needed)
-    
+        
     MKNetworkEngine *safewayEngine = [[MKNetworkEngine alloc] initWithHostName:HOSTNAME customHeaderFields:nil];
-    NSMutableArray *result = [[NSMutableArray alloc] init];
     
     NSDictionary *params = @{@"brand" : @"safeway"};
     MKNetworkOperation* op = [safewayEngine operationWithPath:@"emmd/service/offer/weeklySpecial/4601" params:(NSMutableDictionary*)params httpMethod:@"GET" ssl:NO];
     
     [op onCompletion:^(MKNetworkOperation *completedOperation) {
         NSDictionary *json = [op responseJSON];
-        // NSLog(@"weeklySpecial response: %@", json);
-        NSArray* weeklySpecials = [json objectForKey:@"weeklySpecials"];
-        for (NSDictionary* weeklySpecial in weeklySpecials) {
-            [result addObject:[weeklySpecial objectForKey:@"title"]];
-            // NSLog(@"%@ %@", [weeklySpecial objectForKey:@"title"], [weeklySpecial objectForKey:@"price"]);
-        }
-        NSMutableArray *searchResults = (NSMutableArray*)[[NSSet setWithArray:result] allObjects];
-        NSLog(@"catalog Results: %@", searchResults);        
+        TRWeeklyAdsParser *weeklyAdsParser = [[TRWeeklyAdsParser alloc] init];
+        [weeklyAdsParser parse:json];
     }
      onError:^(NSError *error) {
-         NSLog(@"%@", error);
+         [[[TRService alloc] init] logError:error.description];
      }];
     [safewayEngine enqueueOperation: op];
+}
+
+- (void) dummyMethod1 {
+    NSLog(@"dummyMethod1");
+}
+- (void) dummyMethod2:(NSString*)message {
+    NSLog(@"dummyMethod2 called: %@", message);
 }
 
 @end

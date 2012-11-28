@@ -15,8 +15,20 @@
 @implementation TRViewController
 
 - (IBAction)weeklyAdsPressed:(id)sender {
-    TRNetworkService *networkService = [[TRNetworkService alloc] init];
-    [networkService weeklyAds];
+    [_networkService weeklyAds];
+    [_networkService dummyMethod1];
+}
+
+- (id)initWithNetworkService:(TRNetworkService*)networkService {
+    if ((self = [[TRViewController alloc] init])) {
+        if (networkService)
+            _networkService = networkService;
+        else {
+            _networkService = [[TRNetworkService alloc] init];
+        }
+        return self;
+    }
+    return nil;
 }
 
 - (void)viewDidLoad

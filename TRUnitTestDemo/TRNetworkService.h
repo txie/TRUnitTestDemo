@@ -11,5 +11,6 @@
 @interface TRNetworkService : NSObject
 
 - (void) weeklyAds;
-
+- (void) dummyMethod1;
+- (void) dummyMethod2:(NSString*)message;
 @end
