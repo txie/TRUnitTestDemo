@@ -13,4 +13,5 @@
 - (void) weeklyAds;
 - (void) dummyMethod1;
 - (void) dummyMethod2:(NSString*)message;
+- (int) lengthCompare:(NSString*)str;
 @end

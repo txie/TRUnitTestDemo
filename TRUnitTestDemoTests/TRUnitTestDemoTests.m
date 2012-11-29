@@ -142,7 +142,18 @@
     id netMock = [OCMockObject mockForClass:TRNetworkService.class];
     [[netMock expect] weeklyAds];
     [[netMock expect] dummyMethod1];
+    [[netMock expect] lengthCompare:[OCMArg any]];
     
+    TRViewController *controller = [[TRViewController alloc] initWithNetworkService:netMock];
+    
+    [controller weeklyAdsPressed:controller.weeklyAdsButton];
+    [netMock verify];
+}
+
+- (void)testButtonAction1Nicely {
+    id netMock = [OCMockObject niceMockForClass:TRNetworkService.class];
+    [[netMock expect] weeklyAds];
+        
     TRViewController *controller = [[TRViewController alloc] initWithNetworkService:netMock];
     
     [controller weeklyAdsPressed:controller.weeklyAdsButton];

@@ -28,9 +28,9 @@
         TRWeeklyAdsParser *weeklyAdsParser = [[TRWeeklyAdsParser alloc] init];
         [weeklyAdsParser parse:json];
     }
-     onError:^(NSError *error) {
-         [[[TRService alloc] init] logError:error.description];
-     }];
+    onError:^(NSError *error) {
+        [[[TRService alloc] init] logError:error.description];
+    }];
     [safewayEngine enqueueOperation: op];
 }
 
@@ -38,7 +38,19 @@
     NSLog(@"dummyMethod1");
 }
 - (void) dummyMethod2:(NSString*)message {
-    NSLog(@"dummyMethod2 called: %@", message);
+    NSLog(@"dummyMethod2 called with message: %@", message);
+}
+
+- (int) lengthCompare:(NSString*)str {
+    NSString *sampleStr = @"sample";
+    if (str == nil)
+        return -1;
+    if (str.length == sampleStr.length)
+        return 0;
+    else if (str.length > sampleStr.length)
+        return 1;
+    else
+        return -1;
 }
 
 @end

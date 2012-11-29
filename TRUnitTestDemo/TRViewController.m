@@ -15,8 +15,11 @@
 @implementation TRViewController
 
 - (IBAction)weeklyAdsPressed:(id)sender {
+    
     [_networkService weeklyAds];
-    [_networkService dummyMethod1];
+    if (YES == YES)
+        [_networkService dummyMethod1];
+    [_networkService lengthCompare:@"hello"];
 }
 
 - (id)initWithNetworkService:(TRNetworkService*)networkService {
