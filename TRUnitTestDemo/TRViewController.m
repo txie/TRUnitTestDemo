@@ -16,6 +16,20 @@
 
 - (IBAction)weeklyAdsPressed:(id)sender {
     
+    NSLog(@"%s %s %s:%d someObject=%@", __PRETTY_FUNCTION__, __FILE__, __func__, __LINE__, @"Hello");
+    
+    NSLog(@"%@", [NSThread callStackSymbols]);
+    NSLog(@"%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent]);
+    NSLog(@"%@", NSStringFromClass([self class]));
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+
+    DLog(@"object is %@", @"Hello");
+    DebugLog(@"Object is %@", @"World");
+    // DebugLog(@"Dump here %@", [NSThread callStackSymbols]);
+    // DumpStack();
+    DumpStack(@"Dump %@", @"Here");
+    DumpStack(@"hello");
+    
     [_networkService weeklyAds];
     if (YES == YES)
         [_networkService dummyMethod1];

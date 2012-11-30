@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C02BCE481663FA4C00CEFA4C /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C02BCE471663FA4C00CEFA4C /* libOCMock.a */; };
 		C02BCE4B16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */; };
 		C02BCE4C16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */; };
 		C02BCE4F16654E0C00CEFA4C /* TROffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4E16654E0C00CEFA4C /* TROffer.m */; };
@@ -75,7 +74,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C02BCE471663FA4C00CEFA4C /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = usr/lib/libOCMock.a; sourceTree = "<group>"; };
 		C02BCE4916654DD400CEFA4C /* TRWeeklyAdsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRWeeklyAdsParser.h; sourceTree = "<group>"; };
 		C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRWeeklyAdsParser.m; sourceTree = "<group>"; };
 		C02BCE4D16654E0C00CEFA4C /* TROffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TROffer.h; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				C02F5DF3165ABD5300D74298 /* SenTestingKit.framework in Frameworks */,
 				C02F5DF4165ABD5300D74298 /* UIKit.framework in Frameworks */,
 				C02F5DF5165ABD5300D74298 /* Foundation.framework in Frameworks */,
-				C02BCE481663FA4C00CEFA4C /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +166,6 @@
 		C02F5DBF165ABD5300D74298 = {
 			isa = PBXGroup;
 			children = (
-				C02BCE471663FA4C00CEFA4C /* libOCMock.a */,
 				C02F5DD4165ABD5300D74298 /* TRUnitTestDemo */,
 				C02F5DF8165ABD5300D74298 /* TRUnitTestDemoTests */,
 				C02F5DCD165ABD5300D74298 /* Frameworks */,
@@ -521,8 +517,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
