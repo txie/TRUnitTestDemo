@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02861F216696BB0005BA72D /* ProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C02861F116696BB0005BA72D /* ProtocolTests.m */; };
+		C02861F616696CF8005BA72D /* CapitalizedTranslateService.m in Sources */ = {isa = PBXBuildFile; fileRef = C02861F516696CF8005BA72D /* CapitalizedTranslateService.m */; };
+		C02861F716696CF8005BA72D /* CapitalizedTranslateService.m in Sources */ = {isa = PBXBuildFile; fileRef = C02861F516696CF8005BA72D /* CapitalizedTranslateService.m */; };
+		C02861FA16696E17005BA72D /* LowcaseTranslateService.m in Sources */ = {isa = PBXBuildFile; fileRef = C02861F916696E17005BA72D /* LowcaseTranslateService.m */; };
+		C02861FB16696E17005BA72D /* LowcaseTranslateService.m in Sources */ = {isa = PBXBuildFile; fileRef = C02861F916696E17005BA72D /* LowcaseTranslateService.m */; };
+		C02861FF16696EB7005BA72D /* TranslateServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C02861FE16696EB7005BA72D /* TranslateServiceTests.m */; };
 		C02BCE4B16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */; };
 		C02BCE4C16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */; };
 		C02BCE4F16654E0C00CEFA4C /* TROffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCE4E16654E0C00CEFA4C /* TROffer.m */; };
@@ -74,6 +80,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C02861F016696BB0005BA72D /* ProtocolTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolTests.h; sourceTree = "<group>"; };
+		C02861F116696BB0005BA72D /* ProtocolTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolTests.m; sourceTree = "<group>"; };
+		C02861F416696CF8005BA72D /* CapitalizedTranslateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalizedTranslateService.h; sourceTree = "<group>"; };
+		C02861F516696CF8005BA72D /* CapitalizedTranslateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalizedTranslateService.m; sourceTree = "<group>"; };
+		C02861F816696E17005BA72D /* LowcaseTranslateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowcaseTranslateService.h; sourceTree = "<group>"; };
+		C02861F916696E17005BA72D /* LowcaseTranslateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowcaseTranslateService.m; sourceTree = "<group>"; };
+		C02861FC16696E43005BA72D /* TranslateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateProtocol.h; sourceTree = "<group>"; };
+		C02861FD16696EB7005BA72D /* TranslateServiceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateServiceTests.h; sourceTree = "<group>"; };
+		C02861FE16696EB7005BA72D /* TranslateServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateServiceTests.m; sourceTree = "<group>"; };
 		C02BCE4916654DD400CEFA4C /* TRWeeklyAdsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRWeeklyAdsParser.h; sourceTree = "<group>"; };
 		C02BCE4A16654DD400CEFA4C /* TRWeeklyAdsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRWeeklyAdsParser.m; sourceTree = "<group>"; };
 		C02BCE4D16654E0C00CEFA4C /* TROffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TROffer.h; sourceTree = "<group>"; };
@@ -203,6 +218,11 @@
 				C02F5E09165ABDFF00D74298 /* UIAlertView-Blocks */,
 				C02F5DDD165ABD5300D74298 /* TRAppDelegate.h */,
 				C02F5DDE165ABD5300D74298 /* TRAppDelegate.m */,
+				C02861FC16696E43005BA72D /* TranslateProtocol.h */,
+				C02861F416696CF8005BA72D /* CapitalizedTranslateService.h */,
+				C02861F516696CF8005BA72D /* CapitalizedTranslateService.m */,
+				C02861F816696E17005BA72D /* LowcaseTranslateService.h */,
+				C02861F916696E17005BA72D /* LowcaseTranslateService.m */,
 				C02BCE511665513500CEFA4C /* TRService.h */,
 				C02BCE521665513500CEFA4C /* TRService.m */,
 				C02BCE4D16654E0C00CEFA4C /* TROffer.h */,
@@ -236,6 +256,10 @@
 		C02F5DF8165ABD5300D74298 /* TRUnitTestDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C02861F016696BB0005BA72D /* ProtocolTests.h */,
+				C02861F116696BB0005BA72D /* ProtocolTests.m */,
+				C02861FD16696EB7005BA72D /* TranslateServiceTests.h */,
+				C02861FE16696EB7005BA72D /* TranslateServiceTests.m */,
 				C02F5DFE165ABD5300D74298 /* TRUnitTestDemoTests.h */,
 				C02F5DFF165ABD5300D74298 /* TRUnitTestDemoTests.m */,
 				C02F5DF9165ABD5300D74298 /* Supporting Files */,
@@ -437,6 +461,8 @@
 				C02BCE4B16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */,
 				C02BCE4F16654E0C00CEFA4C /* TROffer.m in Sources */,
 				C02BCE531665513500CEFA4C /* TRService.m in Sources */,
+				C02861F616696CF8005BA72D /* CapitalizedTranslateService.m in Sources */,
+				C02861FA16696E17005BA72D /* LowcaseTranslateService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +486,10 @@
 				C02BCE4C16654DD400CEFA4C /* TRWeeklyAdsParser.m in Sources */,
 				C02BCE5016654E0C00CEFA4C /* TROffer.m in Sources */,
 				C02BCE541665513500CEFA4C /* TRService.m in Sources */,
+				C02861F216696BB0005BA72D /* ProtocolTests.m in Sources */,
+				C02861F716696CF8005BA72D /* CapitalizedTranslateService.m in Sources */,
+				C02861FB16696E17005BA72D /* LowcaseTranslateService.m in Sources */,
+				C02861FF16696EB7005BA72D /* TranslateServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

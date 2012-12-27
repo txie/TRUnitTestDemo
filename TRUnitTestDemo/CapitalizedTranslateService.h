@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TranslateProtocol.h"
 
-@interface TranslateService : NSObject
+@interface CapitalizedTranslateService : NSObject <TranslateProtocol>
 
 @end

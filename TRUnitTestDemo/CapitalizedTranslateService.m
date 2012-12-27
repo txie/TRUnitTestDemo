@@ -6,8 +6,16 @@
 //  Copyright (c) 2012 Tao Xie. All rights reserved.
 //
 
-#import "TranslateService.h"
+#import "CapitalizedTranslateService.h"
 
-@implementation TranslateService
-
+@implementation CapitalizedTranslateService
+- (NSString*)translate:(NSString*)source {
+    if (source) {
+        if ([source isEqualToString:@"special_case"])
+            return @"SpEcial_cASe";
+        else
+            return [source capitalizedString];
+    }
+    return nil;
+}
 @end

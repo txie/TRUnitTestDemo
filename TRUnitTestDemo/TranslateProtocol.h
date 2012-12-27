@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol TranslateProtocol <NSObject>
-
+- (NSString*)translate:(NSString*)source;
 @end

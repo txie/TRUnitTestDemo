@@ -9,5 +9,10 @@
 #import "LowcaseTranslateService.h"
 
 @implementation LowcaseTranslateService
-
+- (NSString*)translate:(NSString*)source {
+    if (source) {
+        return [source lowercaseString];
+    }
+    return nil;
+}
 @end
